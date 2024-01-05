@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>YM Example1</title> <!-- 웹 페이지의 제목을 설정할 수 있음 -->
+    <link rel="stylesheet" href="style.css"/>
+    <script src="main.js"></script>
+</head>
+
+<body>
+    <div class="box1"> <!--div는 하나의 박스를 생성하는 태그.-->
+        <h1>Welcome to HTML</h1>
+        <br> <!--줄 바꾸기 (Enter Key)-->
+        <h2>Welcome to HTML</h2>
+        <hr> <!--수평 줄 삽입-->
+        <h3>Welcome to HTML</h3>
+        <h4>Welcome to HTML</h4>
+        <h5>Welcome to HTML</h5>
+        <h6>Welcome to HTML</h6>
+    </div>
+
+    <div id="idbox1"><!--텍스트 태그, 글자모양 태그-->
+        <p>Hi, My Name Is KDH</p>
+        <p><strong>HI, My Name Is KDH</strong></p>
+        <p><mark>Hi, My Name Is KDH</mark></p>
+    </div>
+
+    <div class="box2"> <!--목록 태그들-->
+        <ul>
+            <li style="color: darkmagenta;">1학년: 정주희 선생님(수학)</li>
+            <!-- 인라인 스타일-->
+            <li>2학년: 오은상 선생님(수학)</li>
+            <li>3학년: 성세경 선생님(수학)</li>
+        </ul>
+        <ol>
+            <li>1학년: 정주희 선생님(수학)</li>
+            <li>2학년: 오은상 선생님(수학)</li>
+            <li style="color: darkmagenta;">3학년: 성세경 선생님(수학)</li>
+            <!-- 인라인 스타일-->
+        </ol>
+    </div>
+
+    <br>
+
+    <div id="idbox2">
+        <a href="#idbox1">현재 웹 페이지 내의 idbox1 위치로 이동</a><br>
+        <a href="https://www.google.com/">구글로 이동하는 태그(기본 값은 현재 웹 브라우저에서 창을 연다.)</a><br>
+        <a href="https://www.google.com/" target="_blank">구글로 이동하는 태그(_blank는 새 브라우저에서 창을 연다.)</a>
+    </div>
+
+    <div id="JSbox">
+        <button id="button-yellow">배경색을 yellow로 변경</button>
+        <button id="button-red">배경색을 red로 변경</button>
+        <button id="button-blue">배경색을 blue로 변경</button>
+    </div>
+</body>
+
+</html>
