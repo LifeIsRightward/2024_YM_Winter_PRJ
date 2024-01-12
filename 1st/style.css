@@ -41,9 +41,9 @@
 
         /*태그 선택자*/
         hr {
-            height: 1px;
+            height: 20px;
             background-color: black;
-            border: solid;
+            border: solid 10px blue;
         }
 
         p {

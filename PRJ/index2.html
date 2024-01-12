@@ -12,9 +12,16 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
+    <!-- 부트스트랩 연결-->
+  
     <!--css 연결-->
     <link rel="stylesheet" href="PRJstyle.css">
+
+    <!-- JS 연결-->
+    <script src="main2.js"></script>
+    <script src='https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js'></script>
 </head>
 <body>
     <!--header-->
@@ -38,18 +45,31 @@
         <!--introduce Section-->
         <section id="introduce">
             <div class="introduce__containner">
-
+                <div class="introduce__img__wraper">
+                    <img class="introduce__img" src="introduce_PRJ.png" alt="PRJIMG">
+                </div>
+                <div class="introduce__explanation">
+                    <p>FrontEnd: 한림대 소웨 19 김대현 <br> BackEnd : 건국대 컴공 19 황재상</p><hr>
+                    <p>기능: AI를 통해 학습시켜, &nbsp;웹 페이지에서 전달받은 이미지분류를 통해 결과를 도출시킴.</p>
+                </div>
             </div>
         </section>
 
-        <!--input Section-->
+        <!--API Section-->
         <section id="api">
             <div class="api__containner">
                 <div class="api__input__containner">
-
+                    <form method="post">
+                        <input type="file" id="fileimg" onchange="readURL(this);">
+                        <input type="submit" id="submitbtn" value="전송" onclick="restPost_FMNIST(); return false;">
+                    </form>
+                    <img id="preview"/>
                 </div>
                 <div class="api__result__containner">
-
+                    <div id="show__result">
+                        <p id="resultP1">Waiting.......</p>
+                        <p id="resultP2">Waiting.......</p>
+                    </div>
                 </div>
             </div>
         </section>
@@ -58,7 +78,17 @@
     <!--footer-->
     <footer id="contact">
         <div class="contact__containner">
-
+            <p>This is footer section.</p>
+            <ul class="socials">
+                <li><a href="https://www.facebook.com/"><i class="fa fa-facebook"></i></a></li>
+                <li><a href="https://twitter.com/"><i class="fa fa-twitter"></i></a></li>
+                <li><a href="https://github.com/"><i class="fa fa-github"></i></a></li>
+                <li><a href="https://kr.linkedin.com/"><i class="fa fa-linkedin-square"></i></a></li>
+                <li><a href="https://www.instagram.com/oem_9_/"><i class="fa fa-instagram"></i></a></li>
+            </ul>
+            <div class="footer-copyright">
+                <p>copyright &copy;2024 </p>
+            </div>
         </div>
     </footer>
 </body>
