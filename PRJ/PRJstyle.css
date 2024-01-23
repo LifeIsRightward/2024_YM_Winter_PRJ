@@ -171,6 +171,7 @@ input[type=submit]{
     margin-left: 30px;
     font-size: 2.4rem;
     border-bottom: 2px solid transparent;
+    color: #cedebd;
     /* 기본상태에서는 투명하게 있음. -> 부모와 색상을 동일하게 만듦 */
     /* 이걸 왜 해줬냐면 호버되면 밀려서. 미리 그냥 보더 바텀을 줌 */
 
@@ -182,6 +183,7 @@ input[type=submit]{
 
 .header__menu__item:hover{
     border: 8px solid rgba(255, 255, 255, 0.487);
+    border-radius: 10%;
 }
 
 /*main*/
@@ -194,7 +196,8 @@ input[type=submit]{
     width: 100%;
     height: 1000px;
     background-color: var(--color-primary-variant);
-    border: solid 10px var(--color-firstgreen);
+    border: solid 5px var(--color-firstgreen);
+    border-radius: 10%;
 }
 
 .introduce__img__wraper {
@@ -208,6 +211,7 @@ input[type=submit]{
     height: 100%;
     padding: 10;
     border: solid 10px var(--color-firstgreen);
+    
 }
 
 .introduce__explanation{
@@ -233,6 +237,7 @@ input[type=submit]{
     height: 1000px;
     background-color: var(--color-primary-secondvariant);
     border: solid 10px var(--color-firstgreen);
+    border-radius: 10%;
 }
 
 #submitbtn{
@@ -253,6 +258,7 @@ input[type=submit]{
     height: 1000px;
     background-color: var(--color-primary-secondvariant);
     border: solid 10px var(--color-firstgreen);
+    border-radius: 10%;
 }
 
 #show__result > p{
